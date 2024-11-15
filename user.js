@@ -307,8 +307,10 @@ async function runOnAllRows(isFirstRun) {
   await Promise.all(prs.map(pr => runOnRow(pr, isFirstRun)));
 }
 
-await runOnAllRows(true);
+(async () => {
+  await runOnAllRows(true);
 
-if (page === 'dashboard') {
-  setInterval(runOnAllRows, refreshInterval);
-}
+  if (page === 'dashboard') {
+    setInterval(runOnAllRows, refreshInterval);
+  }
+})();
