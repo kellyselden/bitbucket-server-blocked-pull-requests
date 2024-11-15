@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Bitbucket Server Blocked Pull Requests
 // @namespace    https://github.com/kellyselden
-// @version      3
+// @version      4
 // @description  Show which pull requests are blocked without opening them
 // @updateURL    https://raw.githubusercontent.com/kellyselden/bitbucket-server-blocked-pull-requests/main/meta.js
 // @downloadURL  https://raw.githubusercontent.com/kellyselden/bitbucket-server-blocked-pull-requests/main/user.js
@@ -9,7 +9,7 @@
 // @license      MIT
 // @supportURL   https://github.com/kellyselden/bitbucket-server-blocked-pull-requests
 // @match        http*://*bitbucket*/dashboard
-// @match        http*://*bitbucket*/projects/*/repos/*/pull-requests
+// @match        http*://*bitbucket*/projects/*/repos/*/pull-requests*
 // ==/UserScript==
 'use strict';
 
