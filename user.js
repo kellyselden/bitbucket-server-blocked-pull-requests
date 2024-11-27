@@ -83,7 +83,7 @@ async function _fetch(url) {
   let data = await response.json();
 
   if (data.errors) {
-    throw new AggregateError(data.errors, `Error fetching ${fetchUrl}`);
+    throw new AggregateError(data.errors, `Error fetching ${url}`);
   }
 
   return data;
